@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laura Buhl — Media Kit | Impact Stationery</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --black: #141414;
+    --white-linen: #EFEEED;
+    --rose-taupe: #845F61;
+    --silver: #B7ADA5;
+    --old-rose: #AD8080;
+    --almond: #E5D8CC;
+    --ink-soft: #5A4F50;
+    --rule: #D8D1CA;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); background: var(--white-linen); color: var(--black); font-size: 16px; line-height: 1.7; }
+
+  /* NAV */
+  nav {
+    padding: 1.25rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid var(--rule);
+    background: var(--white-linen);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav-logo { height: 36px; }
+  .nav-logo img { height: 100%; width: auto; mix-blend-mode: multiply; }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--silver);
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--rose-taupe); }
+
+  /* HERO */
+  .hero {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 5rem 2.5rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 4rem;
+    align-items: center;
+  }
+  .hero-eyebrow {
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--rose-taupe);
+    margin-bottom: 1.5rem;
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(2.8rem, 5vw, 4rem);
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--black);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+  .hero-subtitle {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--silver);
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+  }
+  .hero-cta {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--rose-taupe);
+    color: var(--white-linen);
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 1px;
+    transition: background 0.2s;
+  }
+  .hero-cta:hover { background: var(--black); }
+  .hero-photo {
+    width: 220px;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 2px;
+    background: transparent;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom center;
+  }
+
+  /* STATS */
+  .stats-band {
+    background: var(--black);
+    padding: 2.75rem 2.5rem;
+  }
+  .stats-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .stat {
+    padding: 0 2rem;
+    border-right: 0.5px solid rgba(239,238,237,0.1);
+    text-align: center;
+  }
+  .stat:first-child { padding-left: 0; text-align: left; }
+  .stat:last-child { border-right: none; }
+  .stat-number {
+    font-family: var(--serif);
+    font-size: 2.6rem;
+    font-weight: 300;
+    color: var(--white-linen);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+  }
+  .stat-label {
+    font-size: 11px;
+    color: var(--silver);
+    letter-spacing: 0.06em;
+    font-weight: 300;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+
+  /* RULE LINE */
+  .rule-line {
+    max-width: 900px;
+    margin: 0 auto;
+    height: 0.5px;
+    background: var(--rule);
+  }
+
+  /* SECTIONS */
+  section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2.5rem;
+    border-bottom: 0.5px solid var(--rule);
+  }
+  .section-label {
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--rose-taupe);
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-family: var(--serif);
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+
+  /* BIO */
+  .bio-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+  .bio-text p {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--ink-soft);
+    margin-bottom: 1.25rem;
+    font-weight: 300;
+  }
+  .bio-text p:last-child { margin-bottom: 0; }
+  .bio-text strong { color: var(--black); font-weight: 500; }
+  .pull-quote {
+    border-left: 1.5px solid var(--rose-taupe);
+    padding: 0.25rem 0 0.25rem 1.5rem;
+    margin-bottom: 2rem;
+    font-family: var(--serif);
+    font-size: 1.35rem;
+    font-style: italic;
+    color: var(--black);
+    line-height: 1.55;
+    font-weight: 300;
+  }
+
+  /* TOPICS */
+  .topics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .topic-card {
+    background: var(--white-linen);
+    border: 0.5px solid var(--rule);
+    border-radius: 1px;
+    padding: 1.5rem;
+    border-top: 2px solid var(--rose-taupe);
+  }
+  .topic-card-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--rose-taupe);
+    margin-bottom: 1rem;
+  }
+  .topic-card ul { list-style: none; padding: 0; }
+  .topic-card ul li {
+    font-family: var(--serif);
+    font-size: 1rem;
+    color: var(--ink-soft);
+    padding: 0.35rem 0;
+    border-bottom: 0.5px solid var(--rule);
+    line-height: 1.5;
+    font-weight: 300;
+    display: flex;
+    gap: 0.6rem;
+    align-items: baseline;
+  }
+  .topic-card ul li:last-child { border-bottom: none; }
+  .topic-card ul li::before { content: "—"; color: var(--silver); font-size: 11px; flex-shrink: 0; }
+
+  /* EXAMPLES */
+  .examples-grid { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+  .example-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 1rem;
+    background: var(--almond);
+    border-radius: 1px;
+    font-size: 12px;
+    color: var(--rose-taupe);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    border: 0.5px solid var(--old-rose);
+  }
+  .example-pill span { color: var(--ink-soft); font-weight: 300; font-family: var(--serif); font-size: 13px; }
+
+  /* INTRO BOX */
+  .intro-box {
+    background: var(--black);
+    border-radius: 1px;
+    padding: 2rem 2.25rem;
+    margin-top: 1.5rem;
+  }
+  .intro-box-label {
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--silver);
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+  .intro-box p {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--white-linen);
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  /* CONTACT */
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 1.5rem; }
+  .contact-item {
+    padding: 1.1rem 1.25rem;
+    border: 0.5px solid var(--rule);
+    border-radius: 1px;
+    background: var(--white-linen);
+  }
+  .contact-item-label {
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--silver);
+    margin-bottom: 0.3rem;
+    font-weight: 400;
+  }
+  .contact-item-value { font-family: var(--serif); font-size: 1.05rem; color: var(--black); font-weight: 400; }
+  .contact-item-value a { color: var(--rose-taupe); text-decoration: none; }
+
+  /* FOOTER */
+  footer {
+    padding: 2rem 2.5rem;
+    text-align: center;
+    font-size: 11px;
+    color: var(--silver);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-top: 0.5px solid var(--rule);
+  }
+
+  /* ANIMATIONS */
+  .fade-in { opacity: 0; transform: translateY(14px); animation: fadeUp 0.7s ease forwards; }
+  @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+  .delay-1 { animation-delay: 0.1s; }
+  .delay-2 { animation-delay: 0.2s; }
+  .delay-3 { animation-delay: 0.35s; }
+
+  @media (max-width: 680px) {
+    .hero { grid-template-columns: 1fr; gap: 2rem; }
+    .hero-photo { width: 140px; height: 180px; }
+    .stats-inner { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+    .stat { border-right: none; text-align: left; padding: 0; }
+    .topics-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .bio-layout { grid-template-columns: 1fr; }
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    section { padding: 3rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">
+    <img src="https://drive.google.com/uc?export=view&id=1HAbCMBohhFK9NuEPQKQYTx_5QFyQCRqs" alt="Impact Stationery" />
+  </div>
+  <div class="nav-links">
+    <a href="#bio">About</a>
+    <a href="#topics">Topics</a>
+    <a href="#products">Products</a>
+    <a href="#intro">Intro</a>
+    <a href="#contact">Book Laura</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
+    <p class="hero-eyebrow fade-in">Media Kit &mdash; Podcast Guest</p>
+    <h1 class="fade-in delay-1">Laura Buhl</h1>
+    <p class="hero-subtitle fade-in delay-2">Founder, Impact Stationery</p>
+    <a href="#contact" class="hero-cta fade-in delay-3">Book Laura as a guest</a>
+  </div>
+  <div class="hero-photo fade-in delay-2">
+    <img src="https://drive.google.com/uc?export=view&id=1a1FuDwHrA6mphNZDLWvzljSvcBhqx_Hy" alt="Laura Buhl" />
+  </div>
+</div>
+
+<div class="stats-band">
+  <div class="stats-inner">
+    <div class="stat">
+      <div class="stat-number">$4M+</div>
+      <div class="stat-label">Own stationery brand revenue</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">500K+</div>
+      <div class="stat-label">Units produced collectively</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">160K+</div>
+      <div class="stat-label">Units sold, own brands</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">200+</div>
+      <div class="stat-label">Creators helped</div>
+    </div>
+  </div>
+</div>
+
+<section id="bio">
+  <p class="section-label">About Laura</p>
+  <div class="pull-quote">"I&rsquo;ve helped over 200 coaches and therapists turn their method into a physical product &mdash; journals, planners, cards &mdash; and together we&rsquo;ve produced more than 500,000 units, without a publisher, a bookstore, or a massive following."</div>
+  <div class="bio-text">
+    <p>Laura got here the way most good ideas start: through a personal problem. Diagnosed with ADHD as an adult, she couldn&rsquo;t find a planner that actually worked for her brain &mdash; so she made one. That product went on to sell over 160,000 units. Then came another, and another. What started as a personal solution became a manufacturing collective and a methodology.</p>
+    <p>Before stationery, Laura spent years at Amazon and built her own eCommerce business, developing a deep fluency in product development and manufacturing that most coaches and consultants never acquire. <strong>That combination &mdash; expert methodology and manufacturing know-how &mdash; is what makes Impact Stationery unusual.</strong></p>
+    <p>Today, while most business coaches are telling their clients to build courses and digital products, Laura makes the opposite case. We&rsquo;re watching a cultural shift: in a world saturated with content, PDFs, and AI-generated everything, a physical product cuts through in ways that digital simply can&rsquo;t. Esther Perel turned her relationship method into a card game. Steven Bartlett built The 1% Diary from his podcast&rsquo;s core idea. James Clear created an Atomic Habits journal. The experts who endure create things you can hold.</p>
+    <p>Laura&rsquo;s flagship course and her own <strong>Productize Your Method Planner</strong> are proof of concept &mdash; she doesn&rsquo;t just teach this, she does it herself.</p>
+  </div>
+</section>
+
+<section id="topics">
+  <p class="section-label">What Laura talks about</p>
+  <h2>Topics for every type of show</h2>
+  <div class="topics-grid">
+    <div class="topic-card">
+      <div class="topic-card-label">For any show</div>
+      <ul>
+        <li>How to turn a method into a guided journal or planner</li>
+        <li>The role of paper in a digital and AI-driven world</li>
+        <li>What makes a physical product actually work (not just look good)</li>
+        <li>How a product builds authority without a publisher</li>
+        <li>Manufacturing: what it really takes to bring a product to life</li>
+      </ul>
+    </div>
+    <div class="topic-card">
+      <div class="topic-card-label">For business podcasts</div>
+      <ul>
+        <li>Scaling beyond 1:1 with products</li>
+        <li>Productizing your method</li>
+        <li>Margins and monetization of physical products</li>
+        <li>Using a &pound;30 product as the front door to a &pound;35K offer</li>
+        <li>How experts are moving beyond content into products</li>
+      </ul>
+    </div>
+    <div class="topic-card">
+      <div class="topic-card-label">For therapists &amp; coaches</div>
+      <ul>
+        <li>Creating income beyond 1:1 sessions</li>
+        <li>How guided stationery bridges knowledge and client action</li>
+        <li>Why physical tools create stronger client outcomes</li>
+        <li>Building authority that doesn&rsquo;t depend on social media</li>
+      </ul>
+    </div>
+    <div class="topic-card">
+      <div class="topic-card-label">For personal development shows</div>
+      <ul>
+        <li>Thinking on paper vs thinking on screen</li>
+        <li>Why structured tools drive real, lasting change</li>
+        <li>Journaling as a method, not just a habit</li>
+        <li>How guided stationery creates accountability</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin-top: 3rem;">
+    <p class="section-label">In good company</p>
+    <p style="font-family: var(--serif); font-size: 1rem; color: var(--ink-soft); margin-bottom: 1.25rem; font-weight: 300;">Thought leaders who have already made this move &mdash; from method to physical product:</p>
+    <div class="examples-grid">
+      <div class="example-pill">Esther Perel <span>&mdash; Where Should We Begin card game</span></div>
+      <div class="example-pill">Steven Bartlett <span>&mdash; The 1% Diary &amp; Conversation Cards</span></div>
+      <div class="example-pill">James Clear <span>&mdash; Atomic Habits journal</span></div>
+      <div class="example-pill">Bren&eacute; Brown <span>&mdash; card decks</span></div>
+      <div class="example-pill">Lavendaire <span>&mdash; Artist of Life Workbook, 50K+ copies</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="intro">
+  <p class="section-label">Suggested introduction</p>
+  <h2>How to introduce Laura on air</h2>
+  <p style="font-family: var(--serif); font-size: 1rem; color: var(--silver); font-weight: 300;">Feel free to use this verbatim or adapt it to your show&rsquo;s style.</p>
+  <div class="intro-box">
+    <div class="intro-box-label">Short intro &mdash; 30 seconds</div>
+    <p>&ldquo;Today&rsquo;s guest built her own stationery brands to over $4 million in revenue before turning her manufacturing expertise into a service &mdash; helping 200+ coaches and therapists create their own physical products. She&rsquo;s the founder of Impact Stationery, and she&rsquo;s here to make the case that in a world drowning in digital content, the most powerful thing an expert can do is create something you can hold. Please welcome Laura Buhl.&rdquo;</p>
+  </div>
+</section>
+
+<section id="products">
+  <p class="section-label">Client products</p>
+  <h2>What gets created</h2>
+  <p style="font-family: var(--serif); font-size: 1.05rem; color: var(--ink-soft); font-weight: 300; max-width: 600px; margin-bottom: 2rem;">The range of products that come out of Impact Stationery spans every niche — mental health, business, faith, wellness, relationships, and more. Every one is created by an expert, not a generic stationery brand.</p>
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-bottom: 2rem;">
+    <div class="contact-item"><div class="contact-item-label">Mental health</div><div class="contact-item-value" style="font-size:0.95rem;">Resilience Journal, Worry Interrupt, Finding Balance, The Peace Method</div></div>
+    <div class="contact-item"><div class="contact-item-label">Business & consulting</div><div class="contact-item-value" style="font-size:0.95rem;">Quarterly Business Planner, Goal Mastery Journal, Strategic by Design</div></div>
+    <div class="contact-item"><div class="contact-item-label">Wellness & coaching</div><div class="contact-item-value" style="font-size:0.95rem;">Wellness of Purpose, Ground & Grow, Daily Self Care Journal</div></div>
+    <div class="contact-item"><div class="contact-item-label">Faith & spirituality</div><div class="contact-item-value" style="font-size:0.95rem;">Bible Study Journal, Peace in Christ, HER: Daily Prayer Journal</div></div>
+    <div class="contact-item"><div class="contact-item-label">Mindset & habits</div><div class="contact-item-value" style="font-size:0.95rem;">Becoming Self-Made Planner, 90-Day Streak Keeper, High Vibes Journal</div></div>
+    <div class="contact-item"><div class="contact-item-label">Relationships & family</div><div class="contact-item-value" style="font-size:0.95rem;">Anniversary Journal, Echoes of Wisdom, Gratitude Dice</div></div>
+  </div>
+  <a href="https://www.impactstationery.com/clients-products" target="_blank" style="display: inline-block; padding: 0.8rem 2rem; border: 0.5px solid var(--rose-taupe); color: var(--rose-taupe); font-size: 11px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; border-radius: 1px; transition: all 0.2s;" onmouseover="this.style.background='var(--rose-taupe)';this.style.color='var(--white-linen)'" onmouseout="this.style.background='transparent';this.style.color='var(--rose-taupe)'">View full product catalogue &rarr;</a>
+</section>
+
+<section id="contact" style="border-bottom: none;">
+  <p class="section-label">Book Laura</p>
+  <h2>Let&rsquo;s make it happen</h2>
+  <p style="font-family: var(--serif); font-size: 1.05rem; color: var(--ink-soft); max-width: 520px; font-weight: 300;">Laura is available for podcast interviews, virtual and in-person. Comfortable with any format &mdash; solo interview, panel, or co-host session.</p>
+  <div class="contact-grid">
+    <div class="contact-item">
+      <div class="contact-item-label">Email</div>
+      <div class="contact-item-value"><a href="/cdn-cgi/l/email-protection#89e5e8fcfbe8c9e0e4f9e8eafdfafde8fde0e6e7ecfbf0a7eae6e4"><span class="__cf_email__" data-cfemail="a4c8c5d1d6c5e4cdc9d4c5c7d0d7d0c5d0cdcbcac1d6dd8ac7cbc9">[email&#160;protected]</span></a></div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Website</div>
+      <div class="contact-item-value"><a href="https://impactstationery.com">impactstationery.com</a></div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Format</div>
+      <div class="contact-item-value">Video or audio, remote or in-person</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-item-label">Location</div>
+      <div class="contact-item-value">Available worldwide</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Impact Stationery &nbsp;&middot;&nbsp; Media Kit &nbsp;&middot;&nbsp; Laura Buhl &nbsp;&middot;&nbsp; impactstationery.com
+</footer>
+
+</body>
+</html>
